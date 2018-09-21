@@ -1,0 +1,6 @@
+import org.apache.spark.sql.SQLContext
+
+val jdbcDF=sqlContext.load("jdbc", Map("url" -> "jdbc:postgresql://localhost:5433/cloudera?user=cloudera&password=my2secret", "dbtable" -> "weather"))
+
+jdbcDF.show()
+

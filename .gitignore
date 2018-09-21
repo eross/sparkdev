@@ -1,0 +1,12 @@
+.ipynb_checkpoints
+Untitled.ipynb
+Untitled1.ipynb
+Untitled2.ipynb
+derby.log
+metastore_db/
+postgresql-42.2.4.jar
+postgresql.jar
+postgresql.jre7.jar
+spark-2.3.1-bin-hadoop2.7.tgz
+spark-2.3.1-bin-hadoop2.7/
+
