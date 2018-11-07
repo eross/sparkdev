@@ -1,0 +1,10 @@
+Vertica notes
+
+select "events.0.eventCategory" from payload;
+select COMPUTE_FLEXTABLE_KEYS('payload');
+copy payload from '/verticadata/payload.json' PARSER fjsonparser(flatten_maps = true, flatten_arrays=true);
+create flex table payload();
+
+select maptostring(__raw__) from tableaudata limit 2;
+copy tableaudata from '/verticadata/tableau_data.csv' PARSER fcsvparser();
+create flex table tableaudata();
